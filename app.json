@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "barcodescanner",
+    "description": "An empty new project",
+    "slug": "barcodescanner",
+    "privacy": "public",
+    "sdkVersion": "20.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./assets/icons/app-icon.png",
+    "loading": {
+      "icon": "./assets/icons/loading-icon.png",
+      "hideExponentText": false
+    },
+    "packagerOpts": {
+      "assetExts": ["ttf", "mp4"]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.reactnative.barcodee"
+    },
+    "android": {
+      "package": "com.reactnative.barcodee"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "ttn-2u",
+            "project": "barcode",
+            "authToken": "d0b5759e8b244d93a39dd1942fe81ac2fa00329275d44b94a35e0826f551631e"
+          }
+        }
+      ]
+    }
+
+  }
+}
